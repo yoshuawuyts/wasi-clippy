@@ -32,3 +32,4 @@ proxy = true
 bitflags = "2.5.0"
 wit-bindgen-rt = "0.26.0"
 ferris-says = { version = "0.3", features = ["clippy"] }
+wasi = "0.13.1"

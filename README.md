@@ -13,20 +13,16 @@ So without further ado...
 
 ## Let's go!
 
-First, [install `cargo component`](https://github.com/bytecodealliance/cargo-component#requirements),
-version 0.9.1, which is a tool for building Wasm components implemented in
-Rust. (See [here] for information about building Wasm components from other
-languages too!)
+First, [install `cargo
+component`](https://github.com/bytecodealliance/cargo-component#requirements),
+which is a tool for building Wasm components implemented in Rust. (See [here]
+for information about building Wasm components from other languages too!)
 
 [here]: https://component-model.bytecodealliance.org/language-support.html
 
 With that, build the Wasm component from the source in this repository:
 ```sh
 $ cargo component build
-   Compiling hello-wasi-http v0.0.0 (/home/wasm/hello-wasi-http)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.17s
-    Creating component /home/wasm/hello-wasi-http/target/wasm32-wasi/debug/hello_wasi_http.wasm
-$
 ```
 
 This builds a Wasm component, `target/wasm32-wasi/debug/hello_wasi_http.wasm`.
