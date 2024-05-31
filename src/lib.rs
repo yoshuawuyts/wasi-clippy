@@ -15,6 +15,7 @@ impl bindings::exports::wasi::http::incoming_handler::Guest for Component {
         let body = request.consume().unwrap();
         let stream = body.stream().unwrap();
         let msg = stream.read(max_width).unwrap_or_default();
+        let msg = String::from_utf8_lossy(&msg);
         drop(stream);
 
         let hdrs = Fields::new();
